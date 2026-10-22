@@ -1,0 +1,176 @@
+.local-section {
+  background: #eff3e8;
+  padding: 72px 0;
+}
+.local-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 120px;
+  align-items: center;
+}
+.local-grid h2 {
+  font-size: 57px;
+}
+.local-grid > div > p:not(.eyebrow):not(.local-note) {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 26px 0;
+}
+.local-grid .button {
+  font-size: 11px;
+  min-height: 50px;
+  gap: 30px;
+}
+.local-grid .local-note {
+  font-size: 9px;
+  color: var(--muted);
+  margin-top: 22px;
+}
+.location-card {
+  background: #f8faf2;
+  border: 1px solid #dae2d1;
+  border-radius: 14px;
+  padding: 30px 32px;
+}
+.location-card-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 8px;
+  color: #7e9274;
+  letter-spacing: 0.12em;
+}
+.location-card-top > .icon {
+  width: 17px;
+  height: 17px;
+}
+.location-card-top > span:last-child {
+  margin-left: auto;
+  border: 1px solid #d1dec7;
+  padding: 5px 7px;
+  border-radius: 4px;
+  font-size: 8px;
+}
+.zip-art {
+  font-family: var(--heading);
+  font-size: clamp(75px, 8.2vw, 116px);
+  letter-spacing: -0.075em;
+  line-height: 1.15;
+  color: #72876c;
+  padding: 25px 0 30px;
+}
+.zip-art > span {
+  display: block;
+  font-family: var(--body);
+  font-size: 9px;
+  letter-spacing: 0.34em;
+  line-height: 1.5;
+  color: #7a9271;
+  margin-top: 12px;
+}
+.location-card-bottom {
+  border-top: 1px solid #d6e0cd;
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.location-card address {
+  font-size: 12px;
+  line-height: 1.9;
+}
+.location-card-bottom > a {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #cfdcc6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.location-card-bottom > a > .icon {
+  width: 18px;
+  height: 18px;
+}
+@media (max-width: 1150px) {
+  .local-grid {
+    gap: 60px;
+  }
+}
+@media (max-width: 950px) {
+  .local-grid {
+    gap: 50px;
+  }
+  .local-grid h2 {
+    font-size: 47px;
+  }
+  .location-card {
+    padding: 25px;
+  }
+  .zip-art {
+    font-size: 85px;
+  }
+}
+@media (max-width: 700px) {
+  .local-section {
+    padding: 48px 0;
+  }
+  .local-grid {
+    grid-template-columns: 1fr;
+    gap: 33px;
+  }
+  .local-grid h2 {
+    font-size: 47px;
+  }
+  .local-grid > div > p:not(.eyebrow):not(.local-note) {
+    font-size: 12px;
+    margin: 23px 0;
+  }
+  .local-grid .button {
+    font-size: 11px;
+    min-height: 48px;
+    padding: 14px 21px;
+    gap: 35px;
+  }
+  .local-grid .local-note {
+    font-size: 8px;
+    line-height: 1.9;
+    margin-top: 19px;
+  }
+  .location-card {
+    padding: 24px;
+    border-radius: 11px;
+  }
+  .location-card-top {
+    font-size: 7px;
+    gap: 9px;
+  }
+  .location-card-top > span:last-child {
+    font-size: 7px;
+  }
+  .zip-art {
+    font-size: clamp(78px, 24vw, 125px);
+    padding: 25px 0 27px;
+  }
+  .zip-art > span {
+    font-size: 8px;
+    letter-spacing: 0.32em;
+    margin-top: 10px;
+  }
+  .location-card-bottom {
+    padding-top: 23px;
+  }
+  .location-card address {
+    font-size: 12px;
+    line-height: 1.9;
+  }
+  .location-card-bottom > a {
+    width: 36px;
+    height: 36px;
+  }
+}
+@media (max-width: 360px) {
+  .zip-art {
+    font-size: 78px;
+  }
+}

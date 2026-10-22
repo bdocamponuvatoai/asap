@@ -1,0 +1,96 @@
+.page-intro {
+  padding-top: 65px;
+  padding-bottom: 55px;
+  border-bottom: 1px solid var(--line);
+}
+.page-intro > .eyebrow {
+  margin-bottom: 27px;
+}
+.page-intro-grid {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 55px;
+}
+.page-intro h1 {
+  font-size: clamp(54px, 5.8vw, 82px);
+  line-height: 1.1;
+  letter-spacing: -0.06em;
+}
+.page-intro-grid > div > p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.9;
+  max-width: 620px;
+  margin-top: 29px;
+}
+.page-intro-grid > .button {
+  flex-shrink: 0;
+  margin-bottom: 5px;
+  font-size: 11px;
+}
+@media (max-width: 1150px) {
+  .page-intro-grid {
+    gap: 35px;
+  }
+  .page-intro-grid > .button {
+    font-size: 10px;
+    gap: 15px;
+    padding: 15px;
+  }
+}
+@media (max-width: 950px) {
+  .page-intro {
+    padding-top: 50px;
+    padding-bottom: 42px;
+  }
+  .page-intro h1 {
+    font-size: 60px;
+  }
+  .page-intro-grid {
+    display: block;
+  }
+  .page-intro-grid > .button {
+    margin-top: 26px;
+    font-size: 11px;
+    gap: 25px;
+    padding: 14px 20px;
+  }
+  .page-intro-grid > div > p {
+    font-size: 13px;
+    max-width: 580px;
+  }
+}
+@media (max-width: 700px) {
+  .page-intro {
+    padding-top: 39px;
+    padding-bottom: 34px;
+  }
+  .page-intro > .eyebrow {
+    font-size: 7px;
+    margin-bottom: 24px;
+  }
+  .page-intro h1 {
+    font-size: clamp(43px, 12vw, 65px);
+    line-height: 1.12;
+  }
+  .page-intro-grid > div > p {
+    font-size: 12px;
+    line-height: 1.9;
+    margin-top: 23px;
+  }
+  .page-intro-grid > .button {
+    font-size: 10px;
+    gap: 25px;
+    min-height: 48px;
+    padding: 13px 18px;
+    margin-top: 24px;
+  }
+}
+@media (max-width: 360px) {
+  .page-intro-grid > .button {
+    font-size: 9px;
+    gap: 15px;
+    padding: 13px 16px;
+  }
+}

@@ -1,0 +1,95 @@
+.assurance {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 1fr;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 25px 0;
+  align-items: center;
+}
+.assurance > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  border-left: 1px solid var(--line);
+  font-size: 10px;
+  color: var(--muted);
+  min-height: 30px;
+}
+.assurance > div:first-child {
+  justify-content: flex-start;
+  border: 0;
+}
+.assurance > div:last-child {
+  justify-content: flex-end;
+}
+.assurance .icon {
+  width: 20px;
+  height: 20px;
+  color: #7a9b8b;
+}
+.assurance strong {
+  font-weight: 500;
+  color: var(--ink);
+}
+@media (max-width: 950px) {
+  .assurance > div {
+    font-size: 8px;
+    gap: 9px;
+  }
+  .assurance .icon {
+    width: 16px;
+    height: 16px;
+  }
+  .assurance {
+    padding: 22px 0;
+  }
+}
+@media (max-width: 700px) {
+  .assurance {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 4px 0 15px;
+  }
+  .assurance > div {
+    font-size: 9px;
+    padding: 13px 0;
+    min-height: 40px;
+    gap: 10px;
+    border: 0;
+    justify-content: flex-start !important;
+  }
+  .assurance > div:first-child {
+    width: 50%;
+  }
+  .assurance > div:nth-child(2) {
+    order: 2;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .assurance > div:nth-child(3) {
+    width: 50%;
+    font-size: 8px;
+  }
+  .assurance > div:nth-child(3) > span {
+    max-width: 110px;
+    line-height: 1.8;
+  }
+  .assurance > div:nth-child(3) strong {
+    display: block;
+  }
+  .assurance .icon {
+    width: 17px;
+    height: 17px;
+  }
+}
+@media (max-width: 360px) {
+  .assurance > div:nth-child(3) {
+    font-size: 7px;
+  }
+  .assurance > div {
+    font-size: 8px;
+  }
+}

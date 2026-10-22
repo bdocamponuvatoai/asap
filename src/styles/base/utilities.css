@@ -1,0 +1,38 @@
+.wrap {
+  width: calc(100% - 112px);
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+}
+@media (max-width: 1150px) {
+  .wrap {
+    width: calc(100% - 72px);
+  }
+}
+@media (max-width: 950px) {
+  .wrap {
+    width: calc(100% - 56px);
+  }
+}
+@media (max-width: 700px) {
+  .wrap {
+    width: calc(100% - 44px);
+  }
+}
+@media (max-width: 360px) {
+  .wrap {
+    width: calc(100% - 36px);
+  }
+}

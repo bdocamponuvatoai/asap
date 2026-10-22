@@ -1,0 +1,13 @@
+:root {
+  --paper: #fafbf8;
+  --ink: #253d3b;
+  --teal: #18776e;
+  --teal-dark: #106459;
+  --muted: #6b7d78;
+  --line: #dfe6e0;
+  --sky: #eaf2f5;
+  --sand: #f5efe4;
+  --white: #fff;
+  --heading: var(--font-manrope), Arial, sans-serif;
+  --body: var(--font-inter), Arial, sans-serif;
+}

@@ -1,0 +1,259 @@
+.finder-section {
+  background: var(--sky);
+  padding: 78px 0;
+}
+.finder {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 90px;
+  align-items: center;
+}
+.finder-intro > p:not(.eyebrow) {
+  margin: 22px 0 28px;
+  color: #6a8286;
+  font-size: 13px;
+}
+.finder-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 370px;
+}
+.finder-tabs > button {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 15px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 14px 17px;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+.finder-tabs > button > .icon {
+  width: 20px;
+  height: 20px;
+  color: #6c9291;
+}
+.finder-tabs > button[aria-selected="true"] {
+  background: white;
+  border-color: #dae7e8;
+  box-shadow: 0 4px 12px #2d596904;
+}
+.finder-tabs > button[aria-selected="true"]:after {
+  content: "↗";
+  font-size: 18px;
+  margin-left: auto;
+  color: var(--teal);
+}
+.finder-tabs > button:hover {
+  background: #ffffff90;
+}
+.finder-panel {
+  position: relative;
+  min-height: 425px;
+  border: 1px solid #cddfe1;
+  border-radius: 12px;
+  padding: 45px;
+  background: #f8fbfc;
+}
+.finder-panel > .eyebrow {
+  color: #6b8b8d;
+  font-size: 8px;
+  margin: 0 0 25px;
+  max-width: 75%;
+}
+.panel-number {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-family: var(--heading);
+  font-size: 55px;
+  font-weight: 300;
+  line-height: 1;
+  color: #d7e5e8;
+  letter-spacing: -0.06em;
+}
+.finder-panel h3 {
+  font-size: 34px;
+  max-width: 365px;
+  line-height: 1.2;
+}
+.finder-panel > p:not(.eyebrow) {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.9;
+  margin: 22px 0;
+  max-width: 370px;
+}
+.topic-prompts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 25px;
+}
+.topic-prompts > span {
+  font-size: 9px;
+  background: #eaf2f2;
+  color: #60827e;
+  border: 1px solid #deebea;
+  border-radius: 5px;
+  padding: 8px 10px;
+}
+.finder-panel > .button {
+  background: var(--teal);
+  color: white;
+  border-color: var(--teal);
+  min-height: 47px;
+  font-size: 11px;
+  padding: 13px 18px;
+  gap: 26px;
+}
+.finder-panel small {
+  display: block;
+  font-size: 8px;
+  line-height: 1.7;
+  color: var(--muted);
+  margin-top: 19px;
+}
+@media (max-width: 1150px) {
+  .finder {
+    gap: 60px;
+  }
+  .finder-panel {
+    padding: 35px;
+  }
+  .finder-panel h3 {
+    font-size: 31px;
+  }
+}
+@media (max-width: 950px) {
+  .finder {
+    gap: 40px;
+    grid-template-columns: 1fr 1.15fr;
+  }
+  .finder-panel {
+    padding: 30px;
+    min-height: 440px;
+  }
+  .finder-panel h3 {
+    font-size: 29px;
+  }
+  .finder-panel > .eyebrow {
+    font-size: 7px;
+    max-width: 80%;
+  }
+  .panel-number {
+    font-size: 42px;
+    right: 20px;
+    top: 25px;
+  }
+  .finder-panel > p:not(.eyebrow) {
+    font-size: 11px;
+  }
+  .finder-tabs > button {
+    font-size: 12px;
+    gap: 12px;
+  }
+  .finder-intro > p:not(.eyebrow) {
+    font-size: 12px;
+  }
+}
+@media (max-width: 700px) {
+  .finder-section {
+    padding: 47px 0;
+  }
+  .finder {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .finder-intro h2 {
+    font-size: 39px;
+  }
+  .finder-intro h2 br {
+    display: none;
+  }
+  .finder-intro > p:not(.eyebrow) {
+    font-size: 12px;
+    margin: 22px 0;
+  }
+  .finder-intro > p:not(.eyebrow) > br {
+    display: none;
+  }
+  .finder-tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 7px;
+    max-width: none;
+  }
+  .finder-tabs > button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    gap: 9px;
+    padding: 14px 6px;
+    min-height: 79px;
+    text-align: center;
+  }
+  .finder-tabs > button[aria-selected="true"]:after {
+    display: none;
+  }
+  .finder-tabs > button > .icon {
+    width: 20px;
+    height: 20px;
+  }
+  .finder-panel {
+    padding: 28px 26px;
+    min-height: 375px;
+    border-radius: 11px;
+  }
+  .finder-panel h3 {
+    font-size: 31px;
+    max-width: 300px;
+  }
+  .finder-panel > .eyebrow {
+    font-size: 7px;
+    max-width: 85%;
+    margin-bottom: 25px;
+  }
+  .panel-number {
+    font-size: 43px;
+    top: 24px;
+    right: 22px;
+  }
+  .finder-panel > p:not(.eyebrow) {
+    font-size: 12px;
+    line-height: 1.9;
+    margin: 21px 0;
+  }
+  .topic-prompts {
+    gap: 6px;
+    margin-bottom: 23px;
+  }
+  .topic-prompts > span {
+    font-size: 8px;
+    padding: 8px 9px;
+  }
+  .finder-panel > .button {
+    font-size: 10px;
+    padding: 13px 16px;
+    gap: 28px;
+    min-height: 46px;
+  }
+  .finder-panel small {
+    font-size: 8px;
+    margin-top: 18px;
+    line-height: 1.8;
+  }
+}
+@media (max-width: 360px) {
+  .finder-panel {
+    padding: 25px 21px;
+  }
+  .finder-panel h3 {
+    font-size: 29px;
+  }
+}

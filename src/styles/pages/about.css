@@ -1,0 +1,119 @@
+.about-feature {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 85px;
+  align-items: center;
+  padding-top: 65px;
+  padding-bottom: 60px;
+}
+.about-feature > div:first-child {
+  height: 520px;
+  overflow: hidden;
+  border-radius: 14px 60px 14px 14px;
+}
+.about-feature > div:first-child > img {
+  height: 100%;
+  object-position: 61% center;
+}
+.about-feature h2 {
+  font-size: 45px;
+}
+.about-feature > div > p:not(.eyebrow) {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.95;
+  margin-top: 24px;
+}
+.about-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 65px;
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+.about-values > article {
+  padding-top: 25px;
+  border-top: 1px solid var(--line);
+}
+.about-values .icon {
+  width: 25px;
+  height: 25px;
+  color: #78a293;
+  margin-bottom: 24px;
+}
+.about-values h3 {
+  font-size: 22px;
+}
+.about-values p {
+  font-size: 12px;
+  line-height: 1.9;
+  margin-top: 18px;
+  color: var(--muted);
+}
+@media (max-width: 1150px) {
+  .about-feature {
+    gap: 60px;
+  }
+}
+@media (max-width: 950px) {
+  .about-feature {
+    gap: 45px;
+  }
+  .about-feature h2 {
+    font-size: 36px;
+  }
+  .about-feature > div > p:not(.eyebrow) {
+    font-size: 12px;
+  }
+  .about-values {
+    gap: 35px;
+  }
+  .about-values h3 {
+    font-size: 20px;
+  }
+  .about-values p {
+    font-size: 11px;
+  }
+}
+@media (max-width: 700px) {
+  .about-feature {
+    grid-template-columns: 1fr;
+    gap: 34px;
+    padding-top: 35px;
+    padding-bottom: 32px;
+  }
+  .about-feature > div:first-child {
+    height: 360px;
+    border-radius: 11px 50px 11px 11px;
+  }
+  .about-feature h2 {
+    font-size: 38px;
+  }
+  .about-feature > div > p:not(.eyebrow) {
+    font-size: 12px;
+    line-height: 1.95;
+    margin-top: 22px;
+  }
+  .about-values {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding-top: 10px;
+    padding-bottom: 45px;
+  }
+  .about-values > article {
+    padding-top: 24px;
+  }
+  .about-values .icon {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 20px;
+  }
+  .about-values h3 {
+    font-size: 23px;
+  }
+  .about-values p {
+    font-size: 12px;
+    line-height: 1.9;
+    margin-top: 15px;
+  }
+}
